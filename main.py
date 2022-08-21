@@ -13,7 +13,8 @@ while True:
     user_input = input("Enter a word for phonetic code: ").upper()
     try:
         output_list = [phonetic_dict[letter] for letter in user_input]
-        print(output_list)
-        break
     except KeyError:
         print("Sorry, only letters in the alphabet please.")
+    else:
+        print(output_list)
+        break
